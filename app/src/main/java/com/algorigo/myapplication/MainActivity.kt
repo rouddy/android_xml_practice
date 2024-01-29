@@ -1,5 +1,6 @@
 package com.algorigo.myapplication
 
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.widget.Button
@@ -21,5 +22,10 @@ class MainActivity : AppCompatActivity() {
             val input = findViewById<EditText>(R.id.input_edit_text).getText().toString()
             findViewById<TextView>(R.id.title_view).setText(input)
         })
+        findViewById<Button>(R.id.make_my_own_button).setOnClickListener {
+            Intent(this, TestActivity::class.java).also {
+                startActivity(it)
+            }
+        }
     }
 }
