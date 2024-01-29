@@ -37,7 +37,7 @@
         android:layout_height="0px"
         android:layout_weight="1"
         android:scaleType="fitCenter"
-        android:src="@drawable/kitten" />
+        android:src="@drawable/komodo_dragon" />
 
     <Button
         android:id="@+id/make_my_own_button"
