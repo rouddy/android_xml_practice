@@ -23,9 +23,8 @@ class MainActivity : AppCompatActivity() {
             findViewById<TextView>(R.id.title_view).setText(input)
         })
         findViewById<Button>(R.id.make_my_own_button).setOnClickListener {
-            Intent(this, TestActivity::class.java).also {
-                startActivity(it)
-            }
+            Log.e("!!!", "222")
+            startActivity(Intent(this, TestActivity::class.java))
         }
     }
 }
